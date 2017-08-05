@@ -1,3 +1,20 @@
 <body>
-Memes.
+  <p>
+    <a href='https://liam4.github.io/index.html'>My username changed!</a>
+    So I set up this redirect.
+  </p>
+  <p>
+    It only works if you have JavaScript enabled. If you don't, please just
+    change "liam4.github.io" to "towerofnix.github.io" in the URL.
+  </p>
+  <p>
+    <a href='#unset' id='link'>This link</a> should be set to send you to the
+    right page; click it if you aren't automatically redirected (it still
+    requires JS to work, though).
+  </p>
+  <script>
+    const url = 'https://towerofnix.github.io/' + location.pathname
+    location.replace(url)
+    document.getElementById('link').href = url
+  </script>
 </body>
